@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    label.text = @"99999999";
+    label.font = [UIFont systemFontOfSize:16];
+    label.textColor = [UIColor yellowColor];
+    [self.view addSubview:label];
 }
 
 
